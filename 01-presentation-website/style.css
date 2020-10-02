@@ -72,7 +72,12 @@ body {
 
 #page-1 p {
     transform: translateX(-1800px);
-    animation: text var(--animate-speed) forwards ease-in 1s;
+    animation: text 1s forwards ease-in 1s;
+}
+
+.btn {
+  transform: translateY(1200px);
+  animation: btn var(--animate-speed) forwards ease-in;
 }
 
 /* Keyframes */
@@ -86,4 +91,14 @@ body {
     to {
         transform: translateX(0);
     }
+}
+
+@keyframes btn {
+  to {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
 }
